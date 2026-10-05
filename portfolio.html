@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Портфолио — TechCraft</title>
+<meta name="description" content="Кейсы студии TechCraft: маркетплейс, мобильный банк, платформа обучения, IoT, телемедицина и аналитика.">
+<meta property="og:title" content="Портфолио — TechCraft">
+<meta property="og:description" content="Кейсы студии TechCraft: маркетплейс, мобильный банк, платформа обучения, IoT, телемедицина и аналитика.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techcraft.example/portfolio.html">
+<meta property="og:image" content="https://techcraft.example/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Портфолио — TechCraft">
+<meta name="twitter:description" content="Кейсы студии TechCraft: маркетплейс, мобильный банк, платформа обучения, IoT, телемедицина и аналитика.">
+<meta name="twitter:image" content="https://techcraft.example/og-image.jpg">
+<link rel="canonical" href="https://techcraft.example/portfolio.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cg transform='rotate(-30 12 12)'%3E%3Ccircle cx='7.3' cy='3.2' r='1.45'/%3E%3Crect x='5.5' y='4.7' width='3.6' height='14.6' rx='1.8'/%3E%3Crect x='14.9' y='4.7' width='3.6' height='14.6' rx='1.8'/%3E%3Ccircle cx='16.7' cy='20.8' r='1.45'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body style="background:#000;color:#fff">
+<div class="preloader"><div class="preloader-spinner"></div></div>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<div class="grain"></div>
+<div class="hero-photo hero-photo--sm"><canvas id="bg" aria-hidden="true"></canvas></div>
+<div class="menu-backdrop"></div>
+<header class="header">
+<a class="logo appear appear--scale" href="index.html" aria-label="TechCraft" style="--d:.08s"><svg viewBox="0 0 24 24" fill="currentColor"><g transform="rotate(-30 12 12)"><circle cx="7.3" cy="3.2" r="1.45"/><rect x="5.5" y="4.7" width="3.6" height="14.6" rx="1.8"/><rect x="14.9" y="4.7" width="3.6" height="14.6" rx="1.8"/><circle cx="16.7" cy="20.8" r="1.45"/></g></svg><span>Tech<span class="logo-suffix">Craft</span></span></a>
+<nav id="site-nav" aria-label="Основное меню"><a class="appear appear--scale" href="index.html" style="--d:.16s">Главная</a><a class="appear appear--soft" href="portfolio.html" style="--d:.28s" aria-current="page">Портфолио</a><a class="appear appear--scale" href="services.html" style="--d:.40s">Услуги</a><a class="appear appear--soft" href="contacts.html" style="--d:.52s">Контакты</a></nav>
+<a class="btn btn-solid header-cta appear appear--scale" href="contacts.html" style="--d:.34s" data-open-modal>Начать проект</a>
+<div class="theme-toggle-wrapper"><button class="theme-toggle appear appear--scale" type="button" aria-label="Переключить тему" style="--d:.34s"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button></div>
+<button class="burger appear appear--scale" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" style="--d:.34s"><i></i><i></i><i></i></button>
+</header>
+<main id="main">
+<section class="page-hero"><div class="badge appear appear--pop" style="--d:.22s">Портфолио (демо)</div><h1><span class="headline-line appear appear--mask" style="--d:.42s">Наши <em>кейсы</em></span></h1><p class="lede appear appear--soft" style="--d:.82s">Проекты, которые мы запускали для клиентов из ритейла, финтеха, образования и промышленности.</p></section>
+<section class="sec" aria-label="Список проектов"><div class="sec-in">
+<div class="toolbar"><div class="filters" role="group" aria-label="Фильтр по категории"><button class="filter" type="button" data-filter="all" aria-pressed="true">Все</button><button class="filter" type="button" data-filter="web" aria-pressed="false">Веб</button><button class="filter" type="button" data-filter="mobile" aria-pressed="false">Мобильные</button><button class="filter" type="button" data-filter="ai" aria-pressed="false">AI и данные</button><button class="filter" type="button" data-filter="iot" aria-pressed="false">IoT</button></div>
+<label class="vh" for="search" style="position:absolute;left:-999px">Поиск по проектам</label><input class="search" id="search" type="search" placeholder="Поиск: React, банк, IoT…" autocomplete="off"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="cases cases--3" id="case-list" style="margin-top:20px">
+<article class="case" data-category="web" data-stack="React, Node.js, PostgreSQL" data-client="Fasion (демо)" data-result="Каталог одежды и онлайн-заказы"><img class="thumb" src="images/Fasion.jpg" alt="Дизайн интернет-магазина Fasion с каталогом зимней одежды" width="800" height="500" loading="lazy"><span class="tag">E-commerce</span><h3>Интернет-магазин Fasion</h3><p>Витрина коллекции, каталог товаров и удобный выбор одежды онлайн.</p><div class="meta"><span>Fasion (демо)</span><span>Онлайн-магазин</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="mobile" data-stack="React Native, Go, Redis" data-client="Pay Smarter (демо)" data-result="Платежи и переводы в одном приложении"><img class="thumb" src="images/Pay Smarter – Digital Wallet &amp; Payments App Dark UI.jpg" alt="Экраны приложения цифрового кошелька Pay Smarter" width="800" height="500" loading="lazy"><span class="tag">Финтех</span><h3>Цифровой кошелёк</h3><p>Оплата, переводы, виртуальная карта и контроль расходов в мобильном приложении.</p><div class="meta"><span>Pay Smarter (демо)</span><span>Мобильные платежи</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="ai" data-stack="Next.js, Python, TensorFlow" data-client="Concoach (демо)" data-result="Персональные учебные маршруты"><img class="thumb" src="images/Concoach _ AI EdTech Platform _ MVP Case Study.jpg" alt="Экраны образовательной платформы Concoach с AI-тьютором и курсами" width="800" height="500" loading="lazy"><span class="tag">Эдтех</span><h3>Платформа онлайн-обучения</h3><p>Адаптивные курсы, рекомендации и AI-тьютор для персонального обучения.</p><div class="meta"><span>Concoach (демо)</span><span>AI-обучение</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="iot" data-stack="Go, MQTT, Kubernetes" data-client="SmartFactory (демо)" data-result="−45% простоев"><span class="tag">IoT</span><h3>Панель мониторинга завода</h3><p>Потоки данных с датчиков, оповещения и предиктивное обслуживание на Kubernetes.</p><div class="meta"><span>SmartFactory (демо)</span><span>−45% простоев</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="mobile" data-stack="Flutter, Node.js, WebRTC" data-client="MedLine (демо)" data-result="12 тыс. консультаций в месяц"><img class="thumb" src="images/Instagram.jpg" alt="Экраны медицинского приложения CardioLife для записи на приём и контроля здоровья" width="800" height="500" loading="lazy"><span class="tag">Медицина</span><h3>Приложение для телемедицины</h3><p>Запись к кардиологу, консультации и контроль состояния здоровья в мобильном приложении.</p><div class="meta"><span>MedLine (демо)</span><span>12 тыс. консультаций в месяц</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="ai" data-stack="Python, TypeScript, Financial APIs" data-client="Helios Investments (демо)" data-result="Аналитика портфеля в одном дашборде"><img class="thumb" src="images/Investment Dashboard UI – Finance Analytics &amp; Portfolio Management.jpg" alt="Инвестиционный дашборд Helios с портфелем и графиком доходности" width="800" height="500" loading="lazy"><span class="tag">Инвестиции</span><h3>Инвестиционный дашборд</h3><p>Аналитика портфеля, отслеживание рынка и ключевые финансовые показатели в одной панели.</p><div class="meta"><span>Helios Investments (демо)</span><span>Аналитика портфеля</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+<article class="case" data-category="web" data-stack="Next.js, TypeScript, Web3" data-client="ARTeUM (демо)" data-result="NFT-коллекции и сообщество в одном месте"><img class="thumb" src="images/Web3 Product Design Case Study _ NFT Marketplace UI UX.jpg" alt="Дизайн NFT-маркетплейса ARTeUM с коллекциями цифровых персонажей" width="800" height="500" loading="lazy"><span class="tag">Web3</span><h3>NFT-маркетплейс</h3><p>Витрина NFT-коллекций, страницы проектов и инструменты для сообщества Web3.</p><div class="meta"><span>ARTeUM (демо)</span><span>Web3-маркетплейс</span></div><button class="btn btn-ghost" type="button" data-open>Подробнее</button></article>
+</div>
+<p class="empty" id="empty" hidden>Ничего не найдено. Попробуйте изменить запрос или фильтр.</p>
+</div></section></main>
+<dialog class="dialog" id="case-dialog" aria-labelledby="d-title"><img class="thumb" src="" alt="" width="800" height="500"><h3 id="d-title"></h3><p class="d-text"></p>
+<dl><dt>Клиент</dt><dd class="d-client"></dd><dt>Стек</dt><dd class="d-stack"></dd><dt>Результат</dt><dd class="d-result"></dd></dl>
+<button class="btn btn-solid" type="button" data-close>Закрыть</button></dialog>
+
+<button class="scroll-top" type="button" aria-label="Наверх"><svg viewBox="0 0 24 24"><path d="M12 4l-8 8 1.5 1.5L11 8v12h2V8l5.5 5.5L20 12z"/></svg></button>
+<div class="modal-overlay" id="contact-modal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-header"><h3 class="modal-title" id="modal-title">Оставить заявку</h3><button class="modal-close" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M6 18L18 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><form class="form" id="modal-form" novalidate><div class="field"><label for="modal-name">Ваше имя</label><input id="modal-name" name="name" type="text" autocomplete="name" placeholder="Имя" required><span class="error" id="modal-name-error"></span></div><div class="field"><label for="modal-email">Email</label><input id="modal-email" name="email" type="email" autocomplete="email" placeholder="name@mail.com" required><span class="error" id="modal-email-error"></span></div><div class="field"><label for="modal-message">Расскажите о проекте</label><textarea id="modal-message" name="message" placeholder="Какую задачу нужно решить..." required></textarea><span class="error" id="modal-message-error"></span></div><button class="btn btn-solid" type="submit">Отправить</button><p class="form-status" id="modal-status" role="status" hidden></p></form></div></div>
+<footer class="foot"><ul class="foot-links"><li><a href="index.html">Главная</a></li><li><a href="portfolio.html">Портфолио</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul><p>© 2024 TechCraft (демо) — Демонстрационный сайт-портфолио IT-компании</p></footer>
+</body>
+</html>

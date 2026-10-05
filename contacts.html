@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контакты — TechCraft</title>
+<meta name="description" content="Свяжитесь со студией TechCraft: форма заявки, email, телефон и адрес (демо).">
+<meta property="og:title" content="Контакты — TechCraft">
+<meta property="og:description" content="Свяжитесь со студией TechCraft: форма заявки, email, телефон и адрес (демо).">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techcraft.example/contacts.html">
+<meta property="og:image" content="https://techcraft.example/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Контакты — TechCraft">
+<meta name="twitter:description" content="Свяжитесь со студией TechCraft: форма заявки, email, телефон и адрес (демо).">
+<meta name="twitter:image" content="https://techcraft.example/og-image.jpg">
+<link rel="canonical" href="https://techcraft.example/contacts.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cg transform='rotate(-30 12 12)'%3E%3Ccircle cx='7.3' cy='3.2' r='1.45'/%3E%3Crect x='5.5' y='4.7' width='3.6' height='14.6' rx='1.8'/%3E%3Crect x='14.9' y='4.7' width='3.6' height='14.6' rx='1.8'/%3E%3Ccircle cx='16.7' cy='20.8' r='1.45'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body style="background:#000;color:#fff">
+<div class="preloader"><div class="preloader-spinner"></div></div>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<div class="grain"></div>
+<div class="hero-photo hero-photo--sm"><canvas id="bg" aria-hidden="true"></canvas></div>
+<div class="menu-backdrop"></div>
+<header class="header">
+<a class="logo appear appear--scale" href="index.html" aria-label="TechCraft" style="--d:.08s"><svg viewBox="0 0 24 24" fill="currentColor"><g transform="rotate(-30 12 12)"><circle cx="7.3" cy="3.2" r="1.45"/><rect x="5.5" y="4.7" width="3.6" height="14.6" rx="1.8"/><rect x="14.9" y="4.7" width="3.6" height="14.6" rx="1.8"/><circle cx="16.7" cy="20.8" r="1.45"/></g></svg><span>Tech<span class="logo-suffix">Craft</span></span></a>
+<nav id="site-nav" aria-label="Основное меню"><a class="appear appear--scale" href="index.html" style="--d:.16s">Главная</a><a class="appear appear--soft" href="portfolio.html" style="--d:.28s">Портфолио</a><a class="appear appear--scale" href="services.html" style="--d:.40s">Услуги</a><a class="appear appear--soft" href="contacts.html" style="--d:.52s" aria-current="page">Контакты</a></nav>
+<a class="btn btn-solid header-cta appear appear--scale" href="contacts.html" style="--d:.34s">Начать проект</a>
+<div class="theme-toggle-wrapper"><button class="theme-toggle appear appear--scale" type="button" aria-label="Переключить тему" style="--d:.34s"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button></div>
+<button class="burger appear appear--scale" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" style="--d:.34s"><i></i><i></i><i></i></button>
+</header>
+<main id="main">
+<section class="page-hero"><div class="badge appear appear--pop" style="--d:.22s">Контакты</div><h1><span class="headline-line appear appear--mask" style="--d:.42s">Давайте <em>поговорим</em></span></h1><p class="lede appear appear--soft" style="--d:.82s">Расскажите о задаче — в течение двух рабочих дней пришлём план и оценку.</p></section>
+<section class="sec" aria-label="Форма и контакты"><div class="sec-in"><div class="contact-grid"><form class="form" id="contact-form" novalidate aria-labelledby="form-title"><h2 class="h-sm" id="form-title">Оставить заявку</h2>
+<div class="form-row"><div class="field"><label for="name">Ваше имя</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Айдархан" required aria-describedby="name-error"><span class="error" id="name-error" aria-live="polite"></span></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@mail.com" required aria-describedby="email-error"><span class="error" id="email-error" aria-live="polite"></span></div></div>
+<div class="form-row"><div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 700 123-45-67" required aria-describedby="phone-error"><span class="error" id="phone-error" aria-live="polite"></span></div><div class="field"><label for="service">Услуга</label><select id="service" name="service" required aria-describedby="service-error"><option value="">Выберите услугу</option><option>Веб-разработка</option><option>Мобильное приложение</option><option>Backend и API</option><option>AI и ML</option><option>DevOps и облако</option><option>Кибербезопасность</option></select><span class="error" id="service-error" aria-live="polite"></span></div></div>
+<div class="field"><label for="message">Расскажите о проекте</label><textarea id="message" name="message" placeholder="Какую задачу нужно решить, сроки, бюджет…" required aria-describedby="message-error"></textarea><span class="error" id="message-error" aria-live="polite"></span></div>
+<div><label class="check"><input type="checkbox" id="consent" name="consent"><span>Согласен на обработку персональных данных (демо)</span></label><span class="error" id="consent-error" aria-live="polite"></span></div>
+<button class="btn btn-solid" type="submit">Отправить заявку</button>
+<p class="form-status" id="form-status" role="status" hidden></p></form><ul class="info-list"><li><b>Email</b>info@techcraft.example (демо)</li><li><b>Телефон</b>+7 (700) 000-00-00 (демо)</li><li><b>Адрес</b>Алматы, Казахстан (демо)</li><li><b>Время работы</b>Пн–Пт, 09:00–18:00</li></ul></div></div></section>
+</main>
+
+<button class="scroll-top" type="button" aria-label="Наверх"><svg viewBox="0 0 24 24"><path d="M12 4l-8 8 1.5 1.5L11 8v12h2V8l5.5 5.5L20 12z"/></svg></button>
+<footer class="foot"><ul class="foot-links"><li><a href="index.html">Главная</a></li><li><a href="portfolio.html">Портфолио</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul><p>© 2024 TechCraft (демо) — Демонстрационный сайт-портфолио IT-компании</p></footer>
+</body>
+</html>
